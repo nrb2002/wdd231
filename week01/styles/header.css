@@ -1,0 +1,57 @@
+/************** BASE CSS **************/
+
+/*********** HEADER STYLING ***********/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px; 
+    gap: 25px;
+    align-items: center;
+    padding: 5px 0 5px 10px;
+    border: solid 1px #ddd;
+}
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 5px;
+}
+header span{
+    font-size: 1.2rem;
+    color: #3d4058;
+}
+.hamburger{
+    background: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: #3d4058;
+    cursor: pointer;
+}
+
+.hamburger::after{
+    content: '\2630';
+}
+.hamburger.show::after {
+    content: '\00D7';
+}
+/*********** ./HEADER STYLING ***********/
+
+/************** LARGER SCREENS CSS **************/
+
+
+@media screen and (min-width:38rem) {
+    /*********** HEADER STYLING ***********/
+    header, main, nav, footer{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {grid-template-columns: 24px auto}
+
+    .hamburger{
+        display: none;
+    }    
+    /*********** ./HEADER STYLING ***********/
+}
+
