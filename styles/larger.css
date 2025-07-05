@@ -1,3 +1,20 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
+    /*********** HEADER STYLING ***********/
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
 
+    header {
+        grid-template-columns: 24px auto
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    /*********** ./HEADER STYLING ***********/
 }
