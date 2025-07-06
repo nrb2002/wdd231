@@ -38,7 +38,40 @@ header span{
 }
 /*********** ./HEADER STYLING ***********/
 
+/************ NAVIGATION STYLING *************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: block;
+    list-style: none;
+    text-align: start;
+    padding: 0;
+}
+.navigation ul li{
+    text-decoration: none;
+    padding: 1rem 2rem;    
+}
+.navigation ul li a{
+    text-decoration: none;
+}
+
+
+
+/************ ./NAVIGATION STYLING *************/
+
+
+
+/*******************************************************/
+
 /************** LARGER SCREENS CSS **************/
+
+/*******************************************************/
 
 
 @media screen and (min-width:38rem) {
@@ -52,6 +85,17 @@ header span{
     .hamburger{
         display: none;
     }    
-    /*********** ./HEADER STYLING ***********/
+      
+    /************ NAVIGATION STYLING *************/
+    .navigation {
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    
+   /************ ./NAVIGATION STYLING *************/
+    
+        
 }
 

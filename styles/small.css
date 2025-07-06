@@ -45,7 +45,17 @@ header span {
 }
 /*********** ./HEADER STYLING ***********/
 
-
+/*********** NAVIGATION STYLING ***********/
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    display: flex;list-style-type: none;  
+}
+/*********** ./NAVIGATION STYLING ***********/
 
 /*********** FOOTER STYLING ***********/
 footer img{

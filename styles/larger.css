@@ -17,4 +17,14 @@
     }
 
     /*********** ./HEADER STYLING ***********/
+
+    /************ NAVIGATION STYLING *************/
+    .navigation {
+        display: block;
+    }
+    .navigation ul{
+        display: flex;
+    }
+
+    /************ ./NAVIGATION STYLING *************/
 }
