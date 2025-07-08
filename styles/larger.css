@@ -15,16 +15,26 @@
     .hamburger {
         display: none;
     }
-
     /*********** ./HEADER STYLING ***********/
+
+    /* ****************************************** */
+    /* ****************************************** */
+    /* ****************************************** */
 
     /************ NAVIGATION STYLING *************/
     .navigation {
         display: block;
+        padding: 0 .75rem;
+        transform: none !important;
+        opacity: 1 !important;
+        max-height: none !important;
+        overflow: visible;
     }
-    .navigation ul{
+
+    .navigation ul {
         display: flex;
     }
+    
 
     /************ ./NAVIGATION STYLING *************/
 }

@@ -6,30 +6,34 @@ header {
     grid-template-columns: 24px auto 44px; 
     gap: 25px;
     align-items: center;
-    padding: 5px 0 5px 10px;
+    padding: .75rem;;
     border: solid 1px #ddd;
+    background-color: #0077b6;
+    color: #fff;
 }
 header img{
     display: block;
     width: 100%;
     height: auto;
     border: solid 2px;
-    border-radius: 50%;
-    padding: 5px;
+    border-radius: 15%;
+    padding: .25rem;
 }
 header span{
     font-size: 1.2rem;
-    color: #3d4058;
+    color: #dbecef;
 }
 .hamburger{
     background: none;
     border: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
-    color: #3d4058;
+    color: #dbecef;
     cursor: pointer;
 }
-
+.hamburger.show{
+    color: #48cae4;
+}
 .hamburger::after{
     content: '\2630';
 }
@@ -40,29 +44,44 @@ header span{
 
 /************ NAVIGATION STYLING *************/
 .navigation {
-    display: none;
+    display: none;    
+    background-color: #0b343d;
+    color: #d7ebee;
+    transition: all .7s ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s ease;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .navigation.show {
     display: block;
+    transform: scaleY(1);
+    opacity: 1;
+    max-height: 500px;
+    /* prevents large content from overflowing */
 }
 
 .navigation ul {
     display: block;
     list-style: none;
     text-align: start;
-    padding: 0;
 }
 .navigation ul li{
-    text-decoration: none;
     padding: 1rem 2rem;    
+}
+.navigation ul li:hover,
+.navigation li.current {
+    font-weight: bold;
+    background-color: #055361;
 }
 .navigation ul li a{
     text-decoration: none;
+    color: #e7ecf3;
+    color: #124e8f;
 }
-
-
-
 /************ ./NAVIGATION STYLING *************/
 
 
@@ -89,6 +108,11 @@ header span{
     /************ NAVIGATION STYLING *************/
     .navigation {
         display: block;
+        padding: 0 .75rem;
+        transform: none !important;
+        opacity: 1 !important;
+        max-height: none !important;
+        overflow: visible;
     }
     .navigation ul {
         display: flex;

@@ -1,8 +1,8 @@
-// HEADER AND NAVIGATION SCRIPTS
-const navLinks = document.querySelector('#nava-bar');
+// HEADER SCRIPTS
 const navButton = document.querySelector('#ham-btn');
+const navBar = document.querySelector('#nav-bar');
 
 navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navLinks.classList.toggle('show'); 
+  navButton.classList.toggle('show'); 
+  navBar.classList.toggle('show');  
 });
