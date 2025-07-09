@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         filtered.forEach(course => {
         const div = document.createElement("div");
-        div.className = `course ${course.completed ? "completed" : ""}`;
-        div.innerHTML = `<strong>${course.title}</strong><br>${course.subject} - ${course.number}<br><em>${course.credits} credit(s)</em>`;
+        div.className = `course ${course.completed ? "completed":""}`;
+        div.innerHTML = `<strong>${course.title}</strong><br>${course.subject} - ${course.number}<br><em>${course.credits} credit(s)</em><br>Completed: ${course.completed}`;
         courseList.appendChild(div);
         total += course.credits;
         });
@@ -103,6 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Button listeners
   document.getElementById("allBtn").addEventListener("click", () => renderCourses(() => true));
-  document.getElementById("wddBtn").addEventListener("click", () => renderCourses(c => c.category === "WDD"));
-  document.getElementById("cseBtn").addEventListener("click", () => renderCourses(c => c.category === "CSE"));
+  document.getElementById("wddBtn").addEventListener("click", () => renderCourses(c => c.subject === "WDD"));
+  document.getElementById("cseBtn").addEventListener("click", () => renderCourses(c => c.subject === "CSE"));
 });
