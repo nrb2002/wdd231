@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const courseList = document.getElementById("courseList");
     const totalCredits = document.getElementById("totalCredits");
+    // Get buttons
+    const buttons = document.querySelectorAll(".filter-buttons button");
+    const allBtn = document.getElementById("allBtn");
+
+    // Set default current class to allBtn
+    allBtn.classList.add("current");
 
     const courses = [
         {
@@ -96,6 +102,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         totalCredits.textContent = total;
+
+        // Assign current class dynamically
+        buttons.forEach(button => {
+            button.addEventListener("click", () => {
+                buttons.forEach(btn => btn.classList.remove("current")); // Remove from all
+                button.classList.add("current"); // Add to clicked one
+            });
+        });
     };
 
   // Initial render
