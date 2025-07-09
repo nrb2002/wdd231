@@ -1,8 +1,8 @@
 /*********** GLOBAL VARIABLE ***********/
 :root {
-    --primary-color: #093809;
-    --secondary-color: #0077b6;
-    --accent-1:#51563A;
+    --primary-color: #047baa;
+    --secondary-color: #2b302c;
+    --accent-1:#045078;
     --text-light: #F7FFF7;
     --text-dark:#000000;
     --bg-paragraph: #f5d5c5;
@@ -44,20 +44,19 @@ main, footer{
 /*********** HEADER STYLING ***********/
 header {
     display: grid;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: 48px auto 44px;
     gap: 25px;
     align-items: center;
     padding: .75rem;
     border: solid 1px #ddd;
-    background-color: #0077b6;
-    color: var(--text-light);
+    color: var(--secondary-color);
 }
 
 header img {
     display: block;
     width: 100%;
     height: auto;
-    border: solid 2px;
+    border: solid 1px;
     border-radius: 15%;
     padding: .25rem;
 }
@@ -73,7 +72,7 @@ header span {
     border: none;
     cursor: pointer;
     display: block;
-    color: var(--text-light);
+    color: var(--primary-color);
 }
 
 
