@@ -99,11 +99,13 @@ document.addEventListener("DOMContentLoaded", () => {
         div.innerHTML = `<strong>${course.title}</strong><br>${course.subject} - ${course.number}<br><em>${course.credits} credit(s)</em><br>Completed: ${course.completed}`;
         courseList.appendChild(div);
         total += course.credits;
+
+        
         });
 
         totalCredits.textContent = total;
 
-        // Assign current class dynamically
+        //Assign current class dynamically
         buttons.forEach(button => {
             button.addEventListener("click", () => {
                 buttons.forEach(btn => btn.classList.remove("current")); // Remove from all

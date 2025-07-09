@@ -5,7 +5,7 @@
     --accent-1:#51563A;
     --text-light: #F7FFF7;
     --text-dark:#000000;
-    --bg-paragraph: #f5ede9;
+    --bg-paragraph: #f5d5c5;
     --completed: #d4edda;
     --not-completed: #f8d7da; 
 }
@@ -180,7 +180,7 @@ section img {
     width: 100%;
     max-width: 85%;
     height: auto;
-    margin: 1.5rem;
+    margin: 1.5rem auto;
     border-radius: 4px;
 }
 
@@ -253,7 +253,7 @@ footer {
 }
 
 footer .social-media a {
-    padding: .25rem;
+    padding: .5rem .25rem;
     border: solid 1px lightgray;
     background-color: var(--bg-paragraph);
     border-radius: 20%;
