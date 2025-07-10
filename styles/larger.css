@@ -11,6 +11,9 @@
     header {
         grid-template-columns: 75px auto
     }
+    header span {
+        font-size: 1.5rem;   
+    }
 
     .hamburger {
         display: none;
