@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #047baa;
+    --secondary-color: #2b302c;
+    --accent-color: #045078;
+    --card-bg: #f5d5c5;
+    --text-dark: #1c1c1c;
+    --text-light: #F7FFF7;
+    --shadow: #0000001a;
+    --hover-shadow: rgba(0, 0, 0, 0.25);
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Georgia', serif;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Page structure */
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border-bottom: 4px solid var(--accent-color);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+}
+
+/* Grid layout with gaps and responsive sizing */
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+/* Individual card styling */
+section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 20px var(--hover-shadow);
+}
+
+/* Headings inside cards */
+section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraph text inside cards */
+section p {
+    font-size: 0.95rem;
+    margin: 0.2rem 0;
+    color: var(--text-dark);
+}
+
+/* Responsive image styling */
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    margin-top:0;
+}
