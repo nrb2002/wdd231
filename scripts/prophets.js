@@ -49,6 +49,10 @@ const displayProphets = (prophets) => {
         portrait.setAttribute('width', '250');
         portrait.setAttribute('height', '340');
 
+        //create a div element with a class details that will contain details
+        const details = document.createElement('div');
+        details.classList.add('details');
+
         //create a p element to contain the birth date and place
         const birth = document.createElement('p');
         birth.textContent = `Birth date and place: ${prophet.birthdate} (${prophet.birthplace}).`;
@@ -61,12 +65,15 @@ const displayProphets = (prophets) => {
         children.textContent = `Total number of children: ${prophet.numofchildren}`;
 
         //Using appendChild() on the section element named "card", add the heading and image elements one at a time.
+        details.appendChild(birth);
+        details.appendChild(death);
+        details.appendChild(children);
+
+        
         card.appendChild(fullName);
         card.appendChild(portrait);
-        card.appendChild(birth);
-        card.appendChild(death);
-        card.appendChild(children);
-
+        card.appendChild(details);
+        
 
         //Append each prophet's card to a div element with the class of "cards"
         cards.appendChild(card);
