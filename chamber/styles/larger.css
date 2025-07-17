@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+    nav.navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav.navigation ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    main {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .directory {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .view-toggle {
+        display: grid;
+        justify-content: center;
+    }
+    footer {
+        grid-template-columns: .75fr auto 1fr 1fr;
+        justify-content: space-around;
+    }
+    footer .contact-info{
+        grid-column: 2 / 3;
+    }
+    footer .social-media {
+        grid-column: 3 / 4;
+    }
+    footer .quick-links {
+        grid-column: 4 / 5;
+    }
+
+    footer .author {
+        grid-column: 1 /5;
+    }
+    
+}

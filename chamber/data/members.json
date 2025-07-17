@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Kinshasa Electronics",
+    "address": "123 Avenue de la Science, Gombe, Kinshasa",
+    "phone": "+243 970 000 111",
+    "website": "https://kinshasaelectronics.com",
+    "image": "kinshasa-electronics.png",
+    "membership": 3,
+    "description": "Electronics retailer and importer of modern appliances."
+  },
+  {
+    "name": "Congo Couture",
+    "address": "56 Rue de la Mode, Limete, Kinshasa",
+    "phone": "+243 970 222 333",
+    "website": "https://congocouture.cd",
+    "image": "congo-couture.png",
+    "membership": 2,
+    "description": "High-end Congolese fashion and tailoring services."
+  },
+  {
+    "name": "Green Market RDC",
+    "address": "9 Marché Central, Kinshasa",
+    "phone": "+243 970 444 555",
+    "website": "https://greenmarketrdc.com",
+    "image": "green-market.png",
+    "membership": 1,
+    "description": "Organic food and produce retailer."
+  },
+  {
+    "name": "SmartTech Africa",
+    "address": "88 Boulevard du 30 Juin, Kinshasa",
+    "phone": "+243 970 666 777",
+    "website": "https://smarttech.africa",
+    "image": "smarttech.png",
+    "membership": 3,
+    "description": "IT consulting and software development company."
+  },
+  {
+    "name": "Espace Beauté Kin",
+    "address": "102 Av. Victoire, Matonge, Kinshasa",
+    "phone": "+243 970 888 999",
+    "website": "https://espacebeautekin.cd",
+    "image": "espace-beaute.png",
+    "membership": 2,
+    "description": "Beauty salon and cosmetics supplier."
+  },
+  {
+    "name": "Transports Kongo",
+    "address": "75 Route de Matadi, Kintambo, Kinshasa",
+    "phone": "+243 970 112 233",
+    "website": "https://transportskongo.com",
+    "image": "transports-kongo.png",
+    "membership": 1,
+    "description": "Local logistics and freight services."
+  },
+  {
+    "name": "Banque du Fleuve",
+    "address": "1 Av. de la République, Gombe, Kinshasa",
+    "phone": "+243 970 445 667",
+    "website": "https://banquedufleuve.cd",
+    "image": "banque-du-fleuve.png",
+    "membership": 3,
+    "description": "Modern banking and financial services for SMEs."
+  }
+]

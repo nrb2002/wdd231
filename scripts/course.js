@@ -122,3 +122,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("wddBtn").addEventListener("click", () => renderCourses(c => c.subject === "WDD"));
   document.getElementById("cseBtn").addEventListener("click", () => renderCourses(c => c.subject === "CSE"));
 });
+
+async function getData() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos/'); // request
+  const data = await response.json(); // parse the JSON data
+  console.log(data); // temp output test of data response 
+}
+
+getData();
