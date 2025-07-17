@@ -35,17 +35,16 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="images/baron-logo.svg" alt="Site Logo" width="512" height="512"></a>
-        <span>Baron Tshibasu</span>
-
+        <a href="index.html"><img src="images/chamber-logo-transparent.png" alt="Kinshasa Chamber of Commerce Logo"
+                width="512" height="512"></a>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="#">Discover</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="http://">Join Us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li ><a href="directory.html">Our Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
     <main>
@@ -54,7 +53,14 @@
         
     </main>
     <footer>
+        <div class="contact-info">
+            <h4>Contact us</h4>
+            <span>Physical Address: 1523, Avenue du 24 Novembre; Lingwala; Kinshasa, DR Congo</span><br>
+            <span>Phone: +243-0853393965</span><br>
+            <span>Email: info@kinshasa-chamber.cd</span>
+        </div>
         <div class="social-media">
+            <h4>Follow us</h4>
             <!-- Github icon -->
             <a href="https://github.com/nrb2002/wdd231" target="_blank" rel="noopener noreferrer">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +80,7 @@
                         clip-rule="evenodd" />
                     <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
                 </svg>
-
+    
             </a>
             <!-- FaceBook icon -->
             <a href="https://web.facebook.com/baronmbk/" target="_blank" rel="noopener noreferrer">
@@ -95,9 +101,24 @@
                 </svg>
             </a>
         </div>
+        <div class="quick-links">
+            <h4>Quick links</h4>
+            <ul>
+                <li><a href="siteplan.html">Site Plan</a></li>
+                <li><a href="join.html">Join us</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </div>
         <div class="author">
-            <p>&copy; <span id="currentyear"></span><span> Baron Tshibasu - Kinshasa, DR Congo</span></p>
-            <p><span> Last modification: </span><span id="lastModified"></span></p>
+            <p>&copy; Copyright
+                <span id="currentyear"></span>
+                - Kinshasa Chamber of Commerce.
+                All rights reserved.<br>
+                Crafted with love by Baron Tshibasu from Kinshasa, DR Congo
+            </p>
+            <p>
+                <span> Last modification: </span><span id="lastModified"></span>
+            </p>
         </div>
     </footer>
 
