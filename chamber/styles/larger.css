@@ -1,4 +1,7 @@
 @media screen and (min-width: 768px) {
+    header{
+        padding: 0.5rem 5rem;
+    }
     nav.navigation {
         display: flex !important;
         flex-direction: row;
@@ -25,6 +28,10 @@
     .view-toggle {
         display: grid;
         justify-content: center;
+    }
+    .filter-buttons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
     footer {
         grid-template-columns: .75fr auto 1fr 1fr;

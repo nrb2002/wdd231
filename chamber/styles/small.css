@@ -3,11 +3,11 @@
 
 /* Color Scheme from Logo */
 :root {
-    --primary-color: #7c5b48;
+    --primary-color: #4F3D2B;
     /* Brown from buildings and "Commerce" */
     --secondary-color: #3f3f3f;
     /* Dark gray from "Kinshasa Chamber main text" */
-    --accent-color: #bfa48a;
+    --accent-color: #f2e2d3;
     /* Light warm brown for accents */
     --background-color: #f3f1f1;
     /* Light gray background */
@@ -50,6 +50,9 @@ header img {
 header span {
     font-size: 1.25rem;
     font-weight: bold;
+}
+header a{
+    text-decoration: none;
 }
 
 /* Hamburger Button */
@@ -141,6 +144,9 @@ h1 {
 }
 
 .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
     text-align: center;
     margin: 1rem 0;
     background-color: var(--white);
@@ -148,19 +154,24 @@ h1 {
     border-radius: 10px;
 }
 
+.btn,
 .filter-btn {
     margin: 0 0.3rem;
     padding: 0.5rem 1rem;
-    border: none;
-    background-color: var(--accent-color);
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white);
     cursor: pointer;
     border-radius: 4px;
+    
 }
 
+.btn:hover,
 .filter-btn.active,
 .filter-btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: bold;
+    border: solid 1px var(--primary-color);
 }
 
 #loading-message {
@@ -212,8 +223,8 @@ h1 {
 }
 
 .directory-card img {
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height: 48px;
     margin-bottom: 0.75rem;
 }
 
@@ -230,8 +241,12 @@ h1 {
 
 .directory-card a {
     text-decoration: none;
-    color: var(--accent-color);
-    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.directory-card a:hover,
+.directory-card a:visited {
+    color: red;
 }
 
 /* Footer */

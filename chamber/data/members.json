@@ -1,65 +1,65 @@
 [
   {
-    "name": "Kinshasa Electronics",
+    "name": "K & M Couture",
     "address": "123 Avenue de la Science, Gombe, Kinshasa",
     "phone": "+243 970 000 111",
-    "website": "https://kinshasaelectronics.com",
-    "image": "kinshasa-electronics.png",
+    "website": "https://km-couture.com",
+    "image": "km-logo.webp",
     "membership": 3,
-    "description": "Electronics retailer and importer of modern appliances."
+    "description": "Design and Fashion Shop."
   },
   {
-    "name": "Congo Couture",
-    "address": "56 Rue de la Mode, Limete, Kinshasa",
+    "name": "Congo Empire",
+    "address": "12e Rue Industriel, Limete, Kinshasa",
     "phone": "+243 970 222 333",
-    "website": "https://congocouture.cd",
-    "image": "congo-couture.png",
+    "website": "https://congoempire.org",
+    "image": "cge-logo.webp",
     "membership": 2,
     "description": "High-end Congolese fashion and tailoring services."
   },
   {
-    "name": "Green Market RDC",
+    "name": "Kin Marché",
     "address": "9 Marché Central, Kinshasa",
     "phone": "+243 970 444 555",
-    "website": "https://greenmarketrdc.com",
-    "image": "green-market.png",
+    "website": "https://kinmarche.com/",
+    "image": "kinmarche-logo.webp",
     "membership": 1,
     "description": "Organic food and produce retailer."
   },
   {
-    "name": "SmartTech Africa",
+    "name": "USCT Congo",
     "address": "88 Boulevard du 30 Juin, Kinshasa",
     "phone": "+243 970 666 777",
-    "website": "https://smarttech.africa",
-    "image": "smarttech.png",
+    "website": "http://www.usctcongo.com/",
+    "image": "usct-logo.webp",
     "membership": 3,
-    "description": "IT consulting and software development company."
+    "description": "USCT offers you a selection of the best professional IT products."
   },
   {
-    "name": "Espace Beauté Kin",
-    "address": "102 Av. Victoire, Matonge, Kinshasa",
+    "name": "Vodacom RDC",
+    "address": "102 Av. Colonnel Lukusa, Gombe, Kinshasa",
     "phone": "+243 970 888 999",
-    "website": "https://espacebeautekin.cd",
-    "image": "espace-beaute.png",
+    "website": "https://www.vodacom.cd/particulier/homepage",
+    "image": "vodacom-logo.webp",
     "membership": 2,
-    "description": "Beauty salon and cosmetics supplier."
+    "description": "Our vision is to bring a smile to your face, by making you our focus."
   },
   {
-    "name": "Transports Kongo",
+    "name": "Yango RDC",
     "address": "75 Route de Matadi, Kintambo, Kinshasa",
     "phone": "+243 970 112 233",
-    "website": "https://transportskongo.com",
-    "image": "transports-kongo.png",
+    "website": "https://yango.com/fr_cd/city/kinshasa/?srsltid=AfmBOoqVEcHc3y6iUM6DBG-Em1MyhWX_lWB-66E_8SjYIfGineolcgg9",
+    "image": "yango-logo.webp",
     "membership": 1,
-    "description": "Local logistics and freight services."
+    "description": "Local logistics and taxi services."
   },
   {
-    "name": "Banque du Fleuve",
-    "address": "1 Av. de la République, Gombe, Kinshasa",
+    "name": "Equity BCDC",
+    "address": "1260 Bld du 30 Juin, Gombe, Kinshasa",
     "phone": "+243 970 445 667",
-    "website": "https://banquedufleuve.cd",
-    "image": "banque-du-fleuve.png",
+    "website": "https://equitygroupholdings.com/cd/",
+    "image": "equity-logo.webp",
     "membership": 3,
-    "description": "Modern banking and financial services for SMEs."
+    "description": "We financially empower and improve living standards in African communities."
   }
 ]

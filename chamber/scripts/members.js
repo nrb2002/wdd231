@@ -4,24 +4,6 @@ const url = 'data/members.json';
 const cardsContainer = document.querySelector("#member-cards");
 let allMembers = [];
 
-// Filter members by membership level
-document.querySelectorAll('.filter-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const level = btn.getAttribute('data-filter');
-
-    // Toggle active class
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    if (level === "all") {
-      displayMembers(allMembers);
-    } else {
-      const filtered = allMembers.filter(m => m.membership == level);
-      displayMembers(filtered);
-    }
-  });
-});
-
 //Load members
 async function getMembers() {
   //Loading message
@@ -67,6 +49,26 @@ function displayMembers(members) {
   });
 
 }
+
+
+// Filter members by membership level
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const level = btn.getAttribute('data-filter');
+
+    // Toggle active class
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    if (level === "all") {
+      displayMembers(allMembers);
+    } else {
+      const filtered = allMembers.filter(m => m.membership == level);
+      displayMembers(filtered);
+    }
+  });
+});
+
 
 function membershipLevel(level) {
   switch (level) {
