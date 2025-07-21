@@ -41,21 +41,17 @@
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
     footer {
-        grid-template-columns: .75fr auto 1fr 1fr;
-        justify-content: space-around;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        justify-content: center;
+        gap: 1rem;
+        padding-right: 4rem;
     }
-    footer .contact-info{
+      footer .contact-info{
         grid-column: 2 / 3;
-    }
-    footer .social-media {
-        grid-column: 3 / 4;
-    }
-    footer .quick-links {
-        grid-column: 4 / 5;
     }
 
     footer .author {
-        grid-column: 1 /5;
+        grid-column: 1 /6;
     }
     
 }
