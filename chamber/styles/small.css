@@ -12,6 +12,8 @@
     --background-color: #f3f1f1;
     /* Light gray background */
     --text-color: #1f1f1f;
+    /* Hover or visited link color */
+    --visited-link: #8A0000;
     /* General dark text */
     --white: #ffffff;
     --shadow: rgba(0, 0, 0, 0.1);
@@ -246,7 +248,7 @@ h1 {
 }
 .directory-card a:hover,
 .directory-card a:visited {
-    color: red;
+    color:var(--visited-link);
 }
 
 /* Footer */
