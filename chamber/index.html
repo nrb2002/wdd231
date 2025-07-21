@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | The Chamber of Commerce of Kinshasa</title>
+    <title>Home | Kinshasa Chamber of Commerce</title>
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
@@ -13,37 +13,41 @@
 
     <meta name="author" content="Baron Tshibasu">
 
+    <!-- Meta Tags for social media -->
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="Baron Tshibasu's Site">
+    <meta property="og:description" content="Kinshasa Chamber of Commerce">
+    <meta property="og:image" content="/images/kinshasa-chamber.webp">
+    <meta property="og:url" content="https://nrb2002.github.io/wdd231/chamber/">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
+    
+    <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
-
-    <!-- Meta Tags for social media -->
-    <!-- Meta Tags for social media -->
-    <meta property="og:title" content="Baron Tshibasu's Site">
-    <meta property="og:description" content="The Chamber of Commerce of Kinshasa">
-    <meta property="og:image" content="images/baron.webp">
-    <meta property="og:url" content="https://nrb2002.github.io/wdd231/chamber/">
+    <script src="scripts/members.js" defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="images/chamber-logo-transparent.png" alt="Kinshasa Chamber of Commerce Logo"
-                width="512" height="512"></a>
+        <a href="index.html"><img src="images/chamber-logo.svg" alt="Kinshasa Chamber of Commerce Logo" width="512"
+                height="512"></a>
+        <a href="login" class="btn">Sign in</a>
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li ><a href="directory.html">Our Directory</a></li>
+            <li ><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
