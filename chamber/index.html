@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
-    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +26,13 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <!-- Meta Tags for social media -->
     <!-- Facebook meta tags -->
     <meta property="og:title" content="Baron Tshibasu's Site">
     <meta property="og:description" content="Kinshasa Chamber of Commerce">
-    <meta property="og:image" content="images/kinshasa-chamber.webp">
+    <meta property="og:image" content="http://nrb2002.github.io/wdd231/chamber/images/kinshasa-chamber.webp">
     <meta property="og:url" content="https://nrb2002.github.io/wdd231/chamber/">
 </head>
 
@@ -51,8 +51,47 @@
             <li><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
+    <!-- ✅ HERO SECTION -->
+    <section class="hero">
+        <img src="images/hero.jpg" alt="Kinshasa city view" />
+    </section>
     <main>
-        <h1>The Chamber of Commerce of Kinshasa</h1>
+        <section class="hero-text">
+            <p class="welcome-text">Welcome to the</p>
+            <h1>Kinshasa Chamber of Commerce</h1>
+            <h2>Connect. Collaborate. Grow.</h2>
+            <p>Empowering Kinshasa businesses through opportunity and community.</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </section>
+        
+        
+        <!-- ✅ CURRENT EVENTS -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div id="events-container">
+                <!-- Dynamically loaded -->
+            </div>
+        </section>
+        
+        <!-- ✅ WEATHER SECTION -->
+        <section class="weather">
+            <h2>Today's Weather</h2>
+            <div id="weather-box">
+                <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="#" alt="Weather icon" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <!-- ✅ SPOTLIGHT SECTION -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+                <!-- Filled by JS from members.json -->
+            </div>
+        </section>
         
         
     </main>

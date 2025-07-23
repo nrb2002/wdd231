@@ -22,8 +22,13 @@
         margin: 0 auto;
     }
     main h1{
-        text-align: left;
+        font-size: 1.75rem;
     }
+
+    .hero-text {
+        border-radius: 10px;
+    }
+    
 
     .directory {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -44,14 +49,13 @@
         grid-template-columns: 1fr 2fr 1fr 1fr;
         justify-content: center;
         gap: 1rem;
-        padding-right: 4rem;
     }
       footer .contact-info{
         grid-column: 2 / 3;
     }
 
     footer .author {
-        grid-column: 1 /6;
+        grid-column: 1 /5;
     }
     
 }
