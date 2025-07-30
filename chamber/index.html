@@ -58,41 +58,57 @@
             <source media="(min-width: 1200px)" srcset="images/hero-large.webp">
             <source media="(min-width: 768px)" srcset="images/hero-medium.webp">
             <img src="images/hero-small.webp" alt="Kinshasa city view" loading="lazy" aria-hidden="true" width="500"/>
-        </picture>
-        
+        </picture>        
     </section>
     <main>
+        <!-- HERO SECTION -->
         <section class="hero-text">
             <p class="welcome-text">Welcome to the</p>
-            <h1>Kinshasa Chamber of Commerce</h1>
-            <h2>Connect. Collaborate. Grow.</h2>
+            <p class="h1">Kinshasa Chamber of Commerce</p>
+            <p class="h2">Connect. Collaborate. Grow.</p>
             <p>We are empowering Kinshasa businesses.</p>
             <a href="join.html" class="cta-button">Join the Chamber</a>
-        </section>
+        </section>       
         
-        
+        <h1>Home</h1>
         <!-- CURRENT EVENTS -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <div id="events-container">
-                <!-- Dynamically loaded -->
+        <section class="events card">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div id="events-container">
+                    <!-- Dynamically loaded -->
+                </div>
             </div>
         </section>
         
         <!-- WEATHER SECTION -->
-        <section class="weather">
-            <h2>Today's Weather</h2>
-            <div id="weather-box">
-                <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="#" alt="Weather icon" />
-                    <figcaption></figcaption>
-                </figure>
-            </div>
+        <section class="weather card">
+            
+                <h2>Local Weather</h2>
+                <div id="current-weather">
+                    <h3>Current Weather</h3>
+                    <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="#" alt="Weather icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                    <p><strong>Humidity: </strong><span id="humidity"></span></p>
+                    <p><strong>Wind Speed: </strong><span id="windSpeed"></span></p>
+                    <p><strong>Max Temp.: </strong><span id="maxTemp"></span></p>
+                </div>
+            
+                <div id="weather-forecast">
+                    <h3>3-day forecast</h3>
+                    <p><strong>Temperature:</strong> <span id="forecast-temp"></span></p>
+                    <figure>
+                        <img id="forecast-icon" src="#" alt="Weather forecast icon" />
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
         </section>
         
         <!-- SPOTLIGHT SECTION -->
-        <section class="spotlights">
+        <section class="spotlights container">
             <h2>Member Spotlights</h2>
             <div id="spotlight-container">
                 <!-- Filled by JS from members.json -->

@@ -2,25 +2,28 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const humidity = document.querySelector('#humidity');
+const windSpeed = document.querySelector('#windSpeed');
+const maxTemp = document.querySelector('#maxTemp');
 
 //Declare the data source variable
 /**
  * https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
  */
-//Latitude and Longitude for Trier, Germany
+//Latitude and Longitude for Kinshasa, DRC
 /**
  * Use the Current Weather API named 'weather'.
  * Start a query string with the "?" character as shown in the examples.
  * Use a & between each key/value pair in the query string in these next steps.
- * Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
+ * Specify the latitude and longitude of Kinshasa, DRC using the information you have gathered and the examples provided.
  * Set the units to imperial: "units=imperial" or to metric: "units=metric"
  * Provide your API key: "appid=[enter your key here]"
  */
 
 
-//Specify the latitude and longitude of Trier, Germany using the information you have gathered and the examples provided.
-const lat = 49.75;
-const lon = 6.64;
+//Specify the latitude and longitude of Kinshasa, DRC using the information you have gathered and the examples provided.
+const lat = -4.33;
+const lon = 15.27;
 //Set the units system to metric for Celsius
 const units = "metric";
 //Provide your API key: "appid=[enter your key here]"
@@ -56,11 +59,14 @@ apiFetch();
 
 //Build the displayResults function to output to the given HTML document
 function displayResults(data) {
-  currentTemp.innerHTML = `${data.main.temp}&deg;C`;
-  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-  let desc = data.weather[0].description;
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', data.weather[0].description);
-  weatherIcon.setAttribute('loading', 'lazy');
-  captionDesc.textContent = `${desc}`;
+    currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'weather icon');
+    weatherIcon.setAttribute('loading', 'lazy');
+    captionDesc.textContent = `${desc}`;
+    humidity.textContent = `${data.main.humidity}%`; 
+    windSpeed.textContent = `${data.wind.speed}Km/h`;
+    maxTemp.textContent = `${Math.round(data.main.temp_max)}°C.`;
 }

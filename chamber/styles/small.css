@@ -7,6 +7,8 @@
     /* Brown from buildings and "Commerce" */
     --secondary-color: #3f3f3f;
     /* Dark gray from "Kinshasa Chamber main text" */
+    --border-color: #c9c4c4;
+        /* light gray from for boxes borders */
     --accent-color: #f2e2d3;
     /* Light warm brown for accents */
     --background-color: #f3f1f1;
@@ -32,7 +34,7 @@ body {
     line-height: 1.6;
 }
 
-h1 {
+h1, .h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
@@ -49,9 +51,15 @@ header {
     flex-wrap: wrap;
     box-shadow: 0 2px 5px var(--shadow);
     border-bottom: 1px solid #ddd;
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
+
 header,
-h1{
+h1, .h1{
     color: var(--primary-color);
 }
 header img {
@@ -123,25 +131,51 @@ nav li.current a {
 
 /* Main Content */
 main {
-    padding: 1rem;
+    display: grid;
+    gap: .5rem;
 }
 
-main h2{
+main h2,
+main .h2{
     font-size: 1.3rem;
+    
 }
 
+main>section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /** Home page styling*/
-.hero {
+/* .hero {
     position: relative;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .hero img {
     width: 100%;
     height: 90vh;
+} */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;        /* full viewport height */
+  overflow: hidden;
+}
+
+.hero picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-text {
@@ -150,14 +184,20 @@ main h2{
     left: 50%;
     transform: translate(-50%, -30%);
     color: white;
+    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     width: 100%;
     max-width: 600px;
     text-align: center;
 }
-.hero-text h1 {
+.hero-text .h1 {
     color: var(--accent-color);
+}
+.events.card,
+.weather.card,
+.spotlights {
+    padding: 2rem 1rem;
 }
 
 
@@ -183,7 +223,34 @@ main h2{
     height: 100px;
     object-fit: contain;
 }
-/** Home page styling*/
+
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* ************************************************************************* */
+/** HOME PAGE */
+.card{
+    border: solid 1px var(--border-color);
+    border-radius:4px;
+}
+
+.card h2{
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+
+/** WEATHER SECTION */
+.weather{
+    display: grid;
+}
+
+
+
+
+/* ************************************************************************* */
+/* ************************************************************************* */
+/* ************************************************************************* */
 
 
 /* Directory */
@@ -204,13 +271,10 @@ main h2{
 }
 
 /* Default to grid icon */
-#toggle-view-btn.grid {
-    background-image: url('../images/grid-view.svg');
+#toggle-view-btn.grid {background-image: url('../images/grid-view.svg');
 }
 
-#toggle-view-btn.list {
-    background-image: url('../images/list-view.svg');
-}
+#toggle-view-btn.list {background-image: url('../images/list-view.svg');}
 
 .filter-buttons {
     display: flex;
