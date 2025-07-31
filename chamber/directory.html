@@ -51,26 +51,24 @@
    
     <main role="main">
         <h1>Our Directory</h1>
-        <div class="view-toggle">
-            <p>Toggle View</p>
-            <button id="toggle-view-btn" aria-label="Toggle directory view"></button>
-            
-        </div>
-        <div id="loading-message">Loading members...</div>
+        <div class="container">
+            <div class="view-toggle">
+                <p>Toggle View</p>
+                <button id="toggle-view-btn" aria-label="Toggle directory view"></button>
+                
+            </div>
+            <div id="loading-message">Loading members...</div>
 
-        <!-- Buttons to filter members according to membership level -->
-        <div class="filter-buttons">
-            <button data-filter="all" class="filter-btn active">All</button>
-            <button data-filter="3" class="filter-btn">Gold</button>
-            <button data-filter="2" class="filter-btn">Silver</button>
-            <button data-filter="1" class="filter-btn">Member</button>
-        </div>
-
+            <!-- Buttons to filter members according to membership level -->
+            <div class="filter-buttons">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="3" class="filter-btn">Gold</button>
+                <button data-filter="2" class="filter-btn">Silver</button>
+                <button data-filter="1" class="filter-btn">Member</button>
+            </div>
             <!-- Members cards -->
             <section class="directory" id="member-cards"></section>
-        
-
-
+        </div>
     </main>
     <footer>
         <div class="contact-info">

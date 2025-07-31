@@ -11,6 +11,8 @@
         /* light gray from for boxes borders */
     --accent-color: #f2e2d3;
     /* Light warm brown for accents */
+    --accent-color-2:#004480;
+    /** dark ocean blue for underlining titles or emphasizing our mission*/
     --background-color: #f3f1f1;
     /* Light gray background */
     --text-color: #1f1f1f;
@@ -103,7 +105,7 @@ header .btn{
 nav.navigation {
     display: none;
     flex-direction: column;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 nav.navigation.open {
@@ -130,21 +132,30 @@ nav li.current a {
 
 
 /* Main Content */
-main {
-    display: grid;
-    gap: .5rem;
+main h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
 
-main h2,
-main .h2{
+main h2{
     font-size: 1.3rem;
-    
+    border-bottom: solid 4px var(--accent-color-2);
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 1rem;
+
+}
+main h3{
+    padding: 1rem 0;
 }
 
-main>section {
+main section {
     width: 100%;
     margin: 0 auto;
-    padding: 4rem 1rem;
+    padding: 1rem;
     display: block;
 }
 
@@ -155,16 +166,6 @@ main>section {
 
 
 /** Home page styling*/
-/* .hero {
-    position: relative;
-    text-align: center;
-    height: 90vh;
-}
-
-.hero img {
-    width: 100%;
-    height: 90vh;
-} */
 .hero {
   position: relative;
   width: 100%;
@@ -194,8 +195,31 @@ main>section {
 .hero-text .h1 {
     color: var(--accent-color);
 }
+/* Our Mission Section */
+.mission {
+    padding: 2rem 1rem;
+    background-color: #f4f9fd;
+    text-align: center;
+}
+
+.mission .container {
+    margin: 0 auto;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    color: #004480;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
 .events.card,
-.weather.card,
 .spotlights {
     padding: 2rem 1rem;
 }
@@ -203,12 +227,13 @@ main>section {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     padding: 0.7rem 1.5rem;
     margin-top: 1rem;
     text-decoration: none;
     border-radius: 5px;
+    border-color: var(--primary-color);
 }
 
 .spotlight-card {
@@ -228,21 +253,109 @@ main>section {
 /* ************************************************************************* */
 /* ************************************************************************* */
 /** HOME PAGE */
-.card{
-    border: solid 1px var(--border-color);
-    border-radius:4px;
+
+
+/* Event Slider Styles */
+#events-container {
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
 }
 
-.card h2{
-    background-color: var(--secondary-color);
-    color: var(--white);
+.event-card {
+    min-width: 80%;
+    max-width: 100%;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.event-card img {
+    width: 100%;
+    height: 66%;
+    object-fit: cover;
+    display: block;
+}
+
+.event-card .card-content {
     padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 
 /** WEATHER SECTION */
-.weather{
+.weather .container {
     display: grid;
+    margin: 0 auto;
+    gap: .5rem;
+    
+}
+#current-weather,
+#weather-forecast {
+    border: solid 1px var(--border-color);
+    background-color: #e9f4fb;
+}
+
+ .weather h3{
+    background-color: var(--accent-color);
+    padding: 1rem;
+    color: var(--accent-color-2);
+ }
+ .weather p{
+    text-align: center;
+ }
+
+.weather figure {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+   justify-content: center;
+}
+
+.weather figure img{
+    width:50px;
+}
+
+.weather p {
+    margin: 0.3rem 0;
+}
+
+#current-temp{
+    font-size: 3rem;
+}
+#weather-forecast p{
+    text-align: left;
+    display: flex;
+    padding: 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .weather .container {
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+        }
+    .weather h2{
+        grid-column: 1 / 3;
+    }
+    #current-weather,
+    #weather-forecast{
+        border-radius: 8px;
+        box-shadow: 0 0 10px var(--primary-color);
+        background: transparent;
+    }
+
 }
 
 
@@ -365,6 +478,8 @@ main>section {
     font-size: 1.25rem;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    border: none;
+    margin: auto;
 }
 
 .directory-card p {

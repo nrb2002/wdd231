@@ -1,6 +1,6 @@
 // scripts/members.js
 
-const url = 'data/members.json';
+const urlMembers = 'data/members.json';
 const cardsContainer = document.querySelector("#member-cards");
 let allMembers = [];
 
@@ -12,7 +12,7 @@ async function getMembers() {
 
   //Display members if data found
   try {
-    const response = await fetch(url);
+    const response = await fetch(urlMembers);
     const data = await response.json();
     allMembers = data;
     displayMembers(allMembers);
@@ -29,6 +29,9 @@ async function getMembers() {
 function displayMembers(members) {
   cardsContainer.innerHTML = "";
 
+   //Sort members by membership level
+  members.sort((a, b) => b.name - a.name); // Gold > Silver > Member
+
   members.forEach(member => {
     const card = document.createElement("article");
     card.classList.add("directory-card");
@@ -43,8 +46,7 @@ function displayMembers(members) {
       <p class="description">${member.description}</p>
     `;
     
-    //Sort members by membership level
-    members.sort((a, b) => b.membership - a.membership); // Gold > Silver > Member
+   
     cardsContainer.appendChild(card);
   });
 

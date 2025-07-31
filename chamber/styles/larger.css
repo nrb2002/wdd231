@@ -23,19 +23,62 @@
 
     .hamburger {
         display: none;
-    }
-
-    main {
-        max-width: 1024px;
-        margin: 0 auto;
-    }
-    main h1{
-        font-size: 1.75rem;
-    }
+    }    
 
     .hero-text {
         border-radius: 10px;
     }
+
+    /**Home page**/
+    /* Main Section */
+    main h1 {font-size: 2.2rem;}
+    main h2 {font-size: 2rem;}
+    main h3 {font-size: 1.75rem;}
+    main section:nth-child(even){
+        background-color: white;
+    }
+    /* Our mission section*/
+    .mission{
+        max-width: 800px;
+        background-color: inherit;
+    }
+    .mission h2{
+        margin: 1rem auto;
+    }
+    .mission p {
+        font-size: 1.75rem;
+        color: var(--accent-color-2);
+    }
+
+    /**Events section*/
+    #events-container {
+        height: 80vh;
+    }
+    .event-card img {
+        width: 100%;
+        height: 80%;
+    }
+    .dots-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 0.5rem;
+    }
+
+    .dots-container .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .dots-container .dot.active {
+        background-color: #004480;
+    }
+
+
 
     .directory {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -47,6 +90,7 @@
         gap: 1rem;
         font-weight: bold;
         color: var(--primary-color);
+        margin-top: 1rem;
     }
     .filter-buttons {
         display: grid;

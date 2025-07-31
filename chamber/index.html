@@ -24,6 +24,7 @@
     
     <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/events.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
     <script src="scripts/weather.js" defer></script>
@@ -71,23 +72,36 @@
         </section>       
         
         <h1>Home</h1>
-        <!-- CURRENT EVENTS -->
-        <section class="events card">
+        <!-- OUR MISSION -->
+        <section class="mission">
             <div class="container">
-                <h2>Upcoming Events</h2>
+                <h2>Our Mission</h2>
+                <p>
+                    We empower local businesses, foster economic
+                    development,
+                    and create a thriving environment for entrepreneurs, investors, and community leaders.
+                    We are committed to collaboration, innovation, and sustainable growth that benefits all of Kinshasa.
+                </p>
+            </div>
+        </section>
+        <!-- EVENTS -->
+        <section class="events">
+            <div class="container">
+                <h2>Events</h2>
                 <div id="events-container">
-                    <!-- Dynamically loaded -->
+                    <!-- Cards added here -->
                 </div>
+                <div id="event-dots" class="dots-container"></div>
             </div>
         </section>
         
         <!-- WEATHER SECTION -->
-        <section class="weather card">
-            
+        <section class="weather">            
+            <div class="container">
                 <h2>Local Weather</h2>
                 <div id="current-weather">
                     <h3>Current Weather</h3>
-                    <p><strong>Temperature:</strong> <span id="current-temp"></span></p>
+                    <p><strong><span id="current-temp"></span></strong></p>
                     <figure>
                         <img id="weather-icon" src="#" alt="Weather icon" />
                         <figcaption></figcaption>
@@ -105,10 +119,11 @@
                         <figcaption></figcaption>
                     </figure>
                 </div>
-        </section>
+            </div>
+    </section>
         
         <!-- SPOTLIGHT SECTION -->
-        <section class="spotlights container">
+        <section class="spotlights">
             <h2>Member Spotlights</h2>
             <div id="spotlight-container">
                 <!-- Filled by JS from members.json -->
