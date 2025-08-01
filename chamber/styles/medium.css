@@ -1,0 +1,39 @@
+@media (min-width: 600px) {   
+
+    header {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    header img {
+        height: 80px;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+        top: 60%;
+        padding: 2rem;
+    }
+
+    .mission,
+    .spotlights,
+    .events.card {
+        padding: 3rem 2rem;
+    }
+
+    .forecast-card:nth-child(2) {
+        border-top: 1px dashed var(--border-color);
+        border-bottom: 1px dashed var(--border-color);
+    }
+    .join p {
+        font-size: 1.1rem;
+    }
+    footer .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 2rem;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Home - FOUNTICS Garage</title>
+  <link rel="icon" type="image/x-icon" href="images/icon-fountics-gr.ico">
+  
+  <meta 
+      name="description" 
+      content="WDD 131 – Dynamic Web Fundamentals -
+              Baron Tshibasu -
+              This home page allows the author to demonstrate basic knowledge 
+              of HTML, CSS, and JavaScript.">
+  
+  <meta name="author" content="Baron Tshibasu">
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="styles/fountics-garage.css">
+
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="preload" as="style">
+  
+  <!-- Javascript files -->
+   <script src="scripts/fountics-garage.js" defer></script>
+   <script src="scripts/vehicles.js" defer></script>
+   <script src="scripts/services.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo-fountics-gr.webp" alt="FOUNTICS Garage" width="250"></a>
+    </div>
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Side Menu -->
+    <nav class="sidemenu" id="sidemenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+     <!-- ======  HERO  ====== -->
+    <section class="hero" id="home">
+      <picture class="bg-picture">
+        <source media="(min-width: 992px)" srcset="images/garage-large.webp">
+        <source media="(min-width: 600px)" srcset="images/garage-medium.webp">
+        <img src="images/garage-small.webp" alt="Hero FOUNTICS Garage" loading="lazy" aria-hidden="true" width="500"/>
+      </picture>
+      <div class="hero-text">
+        <h1>Performance. Precision. Passion.</h1>
+        <p>We are specialists in Asian vehicle maintenance and tuning.</p>
+        
+      </div>
+    </section>
+
+     <!-- ======  ABOUT  ====== -->
+    <section class="about" id="about">
+      <h2>FOUNTICS Garage is built on performance passion and decades of technical expertise. </h2>
+      <p>Based in the beautiful city of Kinshasa (DRC), we specialize in Japanese automotive brands, blending advanced diagnostics with motorsport-grade precision.</p>
+    </section>
+
+     <!-- ======  SERVICES  ====== -->
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Performance Tuning</h3>
+          <p>Boost your car's power and responsiveness with expert tuning.</p>
+        </div>
+        <div class="card">
+          <h3>Routine Maintenance</h3>
+          <p>From oil changes to filter replacements, we’ve got you covered.</p>
+        </div>
+        <div class="card">
+          <h3>Engine Diagnostics</h3>
+          <p>Modern tools to quickly diagnose and resolve engine issues.</p>
+        </div>
+        <div class="card">
+          <h3>Professional Car Wash</h3>
+          <p>From external to inner deep cleaning with appropriate products.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ======  SLIDER  ====== -->
+
+
+
+    
+    
+    
+
+    <!-- ======  LOCATION  ====== -->
+    <section class="location" id="location" aria-label="fountics location">
+      <h2>Location</h2>
+      <p>We are located in Kasa-Vubu Municipality, Kinshasa, DR Congo. </p><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15913.46617949044!2d15.293143409741191!3d-4.342115933906857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3137716bbd5f%3A0xcfa153684796f172!2sKasa-Vubu%2C%20Kinshasa!5e0!3m2!1sen!2scd!4v1750152852953!5m2!1sen!2scd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <!-- ======  FOOTER  ====== -->
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> FOUNTICS Garage. All rights reserved.</p>
+      <p>Baron Tshibasu - Kinshasa, DR Congo</p><br>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=Garage&selection=1" target="_blank" rel="noopener noreferrer">FREEPIK</a></li>
+        <li><a href="https://unsplash.com/s/photos/car-garage" target="_blank" rel="noopener noreferrer">Unsplash</a></li>
+        <li><a href="https://www.pexels.com/search/garage/" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+      </ul>
+    </div>    
+    <p><span> Last modification: </span><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

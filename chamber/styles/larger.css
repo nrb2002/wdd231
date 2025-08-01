@@ -1,29 +1,48 @@
 @media screen and (min-width: 768px) {
-    header{
-        padding: 0.5rem 5rem;
+    body {
+        padding-top: 105px;
+        /* Adjust to match header height so that element below header is not hidden*/
+    }
+    header{padding: 0.5rem 5rem;
     }
 
     header .btn {
         display: block;
-    }
-    nav.navigation {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    nav.navigation ul {
-        display: flex;
-        gap: 2rem;
+        width: 150px;
+        padding: .75rem;
+        text-align: center;
+        border-radius: 25px;
     }
 
     nav .login{
         display: none;
     }
-
+      
+    /* Affiche le menu directement sans hamburger */
     .hamburger {
         display: none;
-    }    
+    }
+
+    nav.navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color);
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav li a {
+        border: none;
+        padding: 0.75rem 1rem;
+        color: white;
+        background-color: transparent;
+    }
 
     .hero-text {
         border-radius: 10px;
@@ -49,6 +68,7 @@
     .mission p {
         font-size: 1.75rem;
         color: var(--accent-color-2);
+        max-width: 1200px;
     }
 
     /**Events section*/
@@ -126,17 +146,57 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
-    footer {
-        grid-template-columns: 1fr 2fr 1fr 1fr;
-        justify-content: center;
-        gap: 1rem;
-    }
-      footer .contact-info{
-        grid-column: 2 / 3;
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 0 2rem;
     }
 
-    footer .author {
-        grid-column: 1 /5;
+    main h1 {
+        font-size: 2.25rem;
     }
-    
+
+    main h2 {
+        font-size: 1.75rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .directory.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .forecast-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .forecast-card{
+        padding: .5rem;
+    }
+    .forecast-card:nth-child(2) {
+        padding: 0 2rem;
+        border-left: 1px dashed var(--border-color);
+        border-right: 1px dashed var(--border-color);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    /*  FOOTER STYLE*/
+    footer .footer-container {
+        padding: 0 5rem;
+    }
+
+    footer .contact-info,
+    footer.social-media,
+    footer.quick-links,
+    footer.resources {
+        max-width: 22%;
+        min-width: 220px;
+    }   
 }
