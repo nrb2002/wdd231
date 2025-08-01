@@ -42,7 +42,8 @@
         max-width: 800px;
         background-color: inherit;
     }
-    .mission h2{
+    .mission h2,
+    .join h2{
         margin: 1rem auto;
     }
     .mission p {
@@ -95,6 +96,18 @@
         background: transparent;
     }
 
+    .spotlights #cta{
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem auto;
+        border-top: solid 4px var(--accent-color-2);
+        border-bottom: solid 4px var(--accent-color-2);
+        max-width: 900px;
+    }
+    .join p{
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
 
     .directory {
