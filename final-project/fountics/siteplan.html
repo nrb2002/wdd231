@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Site Plan - FOUNTICS Garage</title>
+    <link rel="icon" type="image/x-icon" href="images/icon-fountics-gr.ico">
+    <meta 
+        name="description" 
+        content="WDD 131 – Dynamic Web Fundamentals -
+                Baron Tshibasu -
+                The purpose of this assignment is to organize a plan for the proposed project.">
+    
+    <meta name="author" content="Baron Tshibasu">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="styles/fountics-garage.css">
+
+
+        <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="preload" as="style">
+    
+    <!-- Javascript files -->
+    <script src="scripts/fountics-garage.js" defer></script>
+    <script src="scripts/vehicles.js" defer></script>
+    <script src="scripts/services.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-fountics-gr.webp" alt="fountics Garage" width="250"></a>
+        </div>
+        <nav class="menu">
+            <ul class="menu-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+        <!-- Side Menu -->
+        <nav class="sidemenu" id="sidemenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="inner-page">        
+        <section class="hero-page" id="page">
+            <picture class="bg-picture">
+                <source media="(min-width: 900px)" srcset="images/fountics-gallery3-large.webp">
+                <source media="(min-width: 600px)" srcset="images/fountics-gallery3-medium.webp">
+                <img src="images/fountics-gallery1-medium.webp" alt="Hero fountics Garage" loading="lazy" aria-hidden="true" width="500"/>
+            </picture>
+            <div class="hero-text">
+                <h1>Site Plan</h1>      
+            </div>
+        </section>
+        <section class="page-content">
+            <h2>Site Name & Logo</h2>
+            <p class="sitename"><a href="index.html" >fountics-garage.cd</a></p><br>
+            <div class="logo">
+                <img src="images/logo-fountics-gr.webp" alt="Logo fountics - Garage" loading="lazy" width="300">
+            </div><hr class="shadow-line">        
+            <article>
+                <h2>Purpose</h2>
+                <p>The website presents fountics - Garage, a modern auto service startup specializing in maintenance, repairs, and diagnostics for Asian car brands—particularly Japanese makes like Toyota, Hyundai, Honda, Nissan, Mazda,  and Subaru. </p>
+            </article><hr class="shadow-line"><br>
+            <article>
+                <h2>Scenarios</h2>                
+                <ul>
+                    <li>Why is it important to have your car checked by a professional mechanic? </li>
+                    <li>What kind of service should I expect at a garage like fountics? </li>
+                    <li>My car just broke down while driving; who can I call for help? </li>
+                    <li>How can I get the price of a bulk product for my company's fleet?</li>
+                </ul>                
+            </article><hr class="shadow-line"><br>
+            <article>
+                <h2>Color Schema</h2>
+                <div class="vertical">
+                    <table >
+                        <tr>
+                            <th class="primary">Primary</th>
+                            <td class="primary">Butterscotch</td>
+                        </tr>
+                        <tr>
+                            <th class="secondary">Secondary</th>
+                            <td class="secondary">Prussian Blue</td>
+                        </tr>
+                        <tr>
+                            <th class="accent">Accent Color</th>
+                            <td class="accent">Penn red</td>
+                        </tr>
+                        <tr>
+                            <th class="background-1">Background 1</th>
+                            <td class="background-1">Alice blue</td>
+                        </tr>  
+                        <tr>
+                            <th class="background-2">Background 2</th>
+                            <td class="background-2">Mint cream</td>
+                        </tr>               
+                    </table>
+                </div>
+                <div class="horizontal">
+                    <table >
+                        <thead>
+                            <tr>
+                                <th class="th">Primary</th>
+                                <th class="th">Secondary</th>
+                                <th class="th">Accent Color</th>
+                                <th class="th">Background 1</th>
+                                <th class="th">Background 2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="primary">Butterscotch</td>
+                                <td class="secondary">Prussian blue</td>
+                                <td class="accent">Penn red</td>
+                                <td class="background-1">Alice blue</td>
+                                <td class="background-2">Mint cream</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <p>Color Schema link: <a href="https://coolors.co/cb9447-02273c-980202-dae3e7-eaf2ef" target="_blank">https://coolors.co/cb9447-02273c-980202-dae3e7-eaf2ef</a></p>
+                
+            </article><hr class="shadow-line"><br>
+            <article>
+                <h2>Typography</h2>
+                <ul>
+                    <li class="heading">Headings: Roboto, sans-serif</li>
+                    <li class="paragraph">Paragraphs: Poppins, sans-serif</li>
+                </ul>
+            </article><hr class="shadow-line"><br>
+            <article>
+                <h2>Wireframe</h2>
+                <h3 class="wireframe-small">Mobile View</h3>
+                <img src="images/wireframe-1-mobile.webp" alt="Wireframe Mobile View" loading="lazy" width="300">
+                <h3 class="wireframe-large">Large Screen View</h3>
+                <img src="images/wireframe-1-desktop.webp" alt="Wireframe Large Screen View" loading="lazy" width="500">
+            </article><hr class="shadow-line"><br>
+        </section>
+    </main>
+   <!-- ======  FOOTER  ====== -->
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> fountics Garage. All rights reserved.</p>
+      <p>Baron Tshibasu - Kinshasa, DR Congo</p><br>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=Garage&selection=1" target="_blank" rel="noopener noreferrer">FREEPIK</a></li>
+        <li><a href="https://unsplash.com/s/photos/car-garage" target="_blank" rel="noopener noreferrer">Unsplash</a></li>
+        <li><a href="https://www.pexels.com/search/garage/" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+      </ul>
+    </div>    
+    <p><span> Last modification: </span><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
+
