@@ -406,10 +406,10 @@ main section {
 }
 
 /* Default to grid icon */
-#toggle-view-btn.grid {background-image: url('../images/grid-view.svg');
+#toggle-view-btn.grid {background-image: url('../images/icons/grid-view.svg');
 }
 
-#toggle-view-btn.list {background-image: url('../images/list-view.svg');}
+#toggle-view-btn.list {background-image: url('../images/icons/list-view.svg');}
 
 .filter-buttons {
     display: flex;
