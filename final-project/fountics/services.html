@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - FOUNTICS Garage</title>
+  <link rel="icon" type="image/x-icon" href="images/icon-fountics-gr.ico">
+  
+  <meta 
+      name="description" 
+      content="WDD 131 – Dynamic Web Fundamentals -
+              Baron Tshibasu -
+              This services page allows the author to introduce the garage's services.">
+  
+  <meta name="author" content="Baron Tshibasu">
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="styles/fountics-garage.css">
+
+
+    <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="preload" as="style">
+  
+  <!-- Javascript files -->
+   <script src="scripts/fountics-garage.js" defer></script>
+   <script src="scripts/vehicles.js" defer></script>
+   <script src="scripts/services.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="index.html"><img src="images/logo-fountics-gr.webp" alt="fountics Garage" width="250"></a>
+    </div>
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Side Menu -->
+    <nav class="sidemenu" id="sidemenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="hero-page" id="page">
+      <picture class="bg-picture">
+        <source media="(min-width: 900px)" srcset="images/fountics-gallery3-large.webp">
+        <source media="(min-width: 600px)" srcset="images/fountics-gallery3-medium.webp">
+        <img src="images/fountics-gallery1-medium.webp" alt="Hero fountics Garage" loading="lazy" aria-hidden="true" width="500"/>
+      </picture>
+      <div class="hero-text">
+        <h1>Services</h1>      
+      </div>
+    </section>
+    <section class="page-content services">
+      <h2>Your satisfaction, our priority!</h2>
+      <article class="service-section">
+        <h3>Performance Tuning</h3>
+        <p>Boost your car’s output and responsiveness through precision tuning — including ECU remapping, intake upgrades, and dyno testing — for enthusiasts who crave performance.</p>          
+        
+      </article>
+
+      <article class="service-section reverse">
+        <h3>Routine Maintenance</h3>
+        <p>From oil and filter changes to safety inspections, our preventive maintenance services ensure your vehicle remains road-ready and reliable, mile after mile.</p>          
+        
+      </article>
+
+      <article class="service-section">
+        <h3>Advanced Diagnostics</h3>
+        <p>Our advanced diagnostic systems detect engine, transmission, or electronic faults quickly and accurately, saving you time and money on repairs.</p>
+        
+      </article>
+
+      <article class="service-section reverse">
+        <h3>Brake & Suspension</h3>
+        <p>Stay safe with brake pad replacements, rotor resurfacing, suspension upgrades, and shock/strut inspections — all performed with precision and premium parts.</p>
+        
+      </article>
+
+      <article class="service-section">
+        <h3>Wheel Alignment</h3>
+        <p>Ensure optimal tire wear and driving stability with 3D digital wheel alignment calibrated to your vehicle's exact specs.</p>
+        
+      </article>
+      <br>
+      <div>
+        <a href="contact.html#appointment" class="btn">Request a Service</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======  FOOTER  ====== -->
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> fountics Garage. All rights reserved.</p>
+      <p>Baron Tshibasu - Kinshasa, DR Congo</p><br>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=Garage&selection=1" target="_blank" rel="noopener noreferrer">FREEPIK</a></li>
+        <li><a href="https://unsplash.com/s/photos/car-garage" target="_blank" rel="noopener noreferrer">Unsplash</a></li>
+        <li><a href="https://www.pexels.com/search/garage/" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+      </ul>
+    </div>    
+    <p><span> Last modification: </span><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
