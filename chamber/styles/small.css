@@ -520,6 +520,146 @@ main section {
     color:var(--visited-link);
 }
 
+/** JOIN PAGE STYLE ****/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0.25rem;
+}
+
+form input[type="submit"] {
+    background-color: #124e8f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0f3f71;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.3rem;
+    color: #124e8f;
+}
+
+.card p {
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #124e8f;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Animate on page load */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content ul {
+    padding-left: 1rem;
+}
+
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    flex: 1 1 200px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background: white;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 /* Footer */
 footer{
     display: block;

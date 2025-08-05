@@ -129,7 +129,31 @@
         text-align: center;
     }
 
+    /* JOIN PAGE */
+    .join-page {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
 
+    .join-page form {
+        flex: 1;
+        max-width: 550px;
+    }
+
+    .membership-cards {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-left: 2rem;
+        margin-top: 0;
+    }
+
+    .join-page .card {
+        text-align: left;
+    }
+         
     .directory {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }

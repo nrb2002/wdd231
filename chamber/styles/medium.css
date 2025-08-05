@@ -29,6 +29,31 @@
     .join p {
         font-size: 1.1rem;
     }
+
+    /*** JOIN PAGE STYLING***/
+    /* main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    @media screen and (min-width: 768px) { */
+        /* main {
+            flex-direction: row;
+            align-items: flex-start;
+        } */
+
+    form {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .membership-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+
     footer .footer-container {
         flex-direction: row;
         flex-wrap: wrap;
