@@ -170,6 +170,8 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     }
+
+    
 }
 
 @media (min-width: 900px) {
@@ -209,6 +211,12 @@
         border-right: 1px dashed var(--border-color);
         border-top: none;
         border-bottom: none;
+    }
+    /******DISCOVER PAGE *****/
+    .attraction-gallery {
+        grid-template-areas:
+            "a1 a2 a3 a4"
+            "a5 a6 a7 a8";
     }
 
     /*  FOOTER STYLE*/

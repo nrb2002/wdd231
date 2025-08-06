@@ -52,6 +52,20 @@
     .membership-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /***** DISCOVER PAGE *********/
+    .attraction-gallery {
+        grid-template-areas:
+            "a1 a2"
+            "a3 a4"
+            "a5 a6"
+            "a7 a8";
+    }
+    
+    figure img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
     
 
     footer .footer-container {
