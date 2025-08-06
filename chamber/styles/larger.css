@@ -176,7 +176,7 @@
 
 @media (min-width: 900px) {
     .container {
-        padding: 0 2rem;
+        padding: 1rem;
     }
 
     main h1 {
