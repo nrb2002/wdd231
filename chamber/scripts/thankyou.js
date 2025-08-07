@@ -1,10 +1,10 @@
-
+//Get data filled in the form from the URL
 const params = new URLSearchParams(window.location.search);
 const fields = {
-    firstName: params.get('firstName'),
-    lastName: params.get('lastName'),
+    firstname: params.get('firstname'),
+    lastname: params.get('lastname'),
     email: params.get('email'),
-    mobile: params.get('mobile'),
+    phone: params.get('phone'),
     business: params.get('business'),
     timestamp: params.get('timestamp')
 };

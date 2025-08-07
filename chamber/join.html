@@ -59,18 +59,19 @@
     <main class="join">
         <h1>Join the Chamber</h1>
         <section class="form-section container">
-            <h2>Please fill out this form</h2>            
+            <h2>Chamber Member Application Form</h2>
+            <p>Please fill out this form so you can benefit from all members advantages, depending on the category you pick. </p>            
             <small>Fields with a " * " are mandatory</small>
             <form id="application-form" action="thankyou.html" method="get">
             
                 <fieldset>
                     <legend>👤 Personal Information</legend>
             
-                    <label for="fname">First Name*</label>
-                    <input type="text" id="fname" name="fname" required>
+                    <label for="firstname">First Name*</label>
+                    <input type="text" id="firstname" name="firstname" required>
             
-                    <label for="lname">Last Name*</label>
-                    <input type="text" id="lname" name="lname" required>
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" id="lastname" name="lastname" required>
             
                     <label for="email">Email*</label>
                     <input type="email" id="email" name="email" required>
@@ -89,7 +90,7 @@
                     <input type="text" id="position" name="position">
             
                     <label for="website">Business Website</label>
-                    <input type="url" id="website" name="website">
+                    <input type="url" id="website" name="website" placeholder="https://mybusiness.com">
                 </fieldset>
             
                 <fieldset>
@@ -113,7 +114,9 @@
             
                     <label for="timestamp">Date of Submission</label>
                     <input type="date" id="timestamp" name="timestamp">
-            
+                </fieldset>
+                <fieldset>
+                    <legend> Consent </legend>
                     <label class="consent">
                         <input type="checkbox" name="terms" required>
                         <span>I agree to the terms and conditions</span>

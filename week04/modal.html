@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Dialog Examples</title>
+
+    <link rel="stylesheet" href="styles/modal.css">
+    <script src="scripts/modal.js" defer></script>
+</head>
+<body>
+    <h1>Modal Dialog Examples</h1>
+    <section>
+        <h2>Example 1</h2>
+        <p>In this example, the dialog element is used to create a modal dialog with a title and a close button. The id attribute
+            is used to identify the dialog so that it can be controlled with JavaScript.</p>
+        <button id="openModal">Try and see</button>
+        <dialog id="myModal">
+            <h3>This is my first modal dialog</h3>
+            
+            <p>This dialog element was not visible until the show() method was called in JavaScript so do not worry if you are
+            building a test page and start with this HTML and nothing shows up.</p>
+            <button id="closeModal">Close</button>
+        </dialog>
+    </section>
+    <section>
+        <h2>Example 2</h2>
+        <p>This is an example of using HTML only popover to support the dialog. No javscript needed. 
+            Click the button below to open a modal newsletter signup form.</p>
+        <button id="openModal2" popovertarget="newsletter" popovertargetaction="show">Sign up</button>
+        
+        <dialog class="modal" id="newsletter" popover>
+            <button class="close-button" popovertarget="newsletter" popovertargetaction="hide">❌</button>
+            <h2>Stake Trek</h2>
+            <h3>Volunteer Signup</h3>
+            <form class="form" method="dialog">
+                <label>Name<input type="text" required></label>
+                <label>Phone<input type="tel" pattern="^\+?\d{1,4}?\s?(\(?\d{3}\)?\s?-?\s?\d{3}\s?-?\s?\d{4})$"
+                        placeholder="+1 555-123-4567" required></label>
+                <button class="button" type="submit">Sign Up</button>
+            </form>
+        
+        </dialog>
+    </section>
+
+    
+</body>
+</html>

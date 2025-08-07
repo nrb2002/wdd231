@@ -98,9 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
         div.className = `course ${course.completed ? "completed":""}`;
         div.innerHTML = `<strong>${course.title}</strong><br>${course.subject} - ${course.number}<br><em>${course.credits} credit(s)</em><br>Completed: ${course.completed}`;
         courseList.appendChild(div);
-        total += course.credits;
-
-        
+        total += course.credits;        
         });
 
         totalCredits.textContent = total;
