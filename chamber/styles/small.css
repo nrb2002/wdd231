@@ -639,15 +639,10 @@ form .consent{
 }
 
 .membership-cards {
-    /* display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 1rem;
-    margin-top: 2rem; */
-
-        display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 1rem;
-            padding: 1rem;
+    padding: 1rem;
 }
 
 .membership-cards .card {
