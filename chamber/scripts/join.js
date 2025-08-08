@@ -5,7 +5,7 @@ document.querySelectorAll('.card a').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
     const cat = link.getAttribute('href').replace('#modal-', ''); //Remove the prefix to match the card cat
-    showMembershipModal(cat); 
+    showMembershipModal(cat);
   });
 });
 
