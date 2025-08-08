@@ -93,9 +93,9 @@
                     </fieldset>
                 
                     <fieldset>
-                        <legend>🌟 Membership Preferences</legend>
+                        <legend>🌟 Membership Preferences </legend>
                 
-                        <label for="membership">Membership Level</label>
+                        <label for="membership">Membership Level <span><small><i><a href="#membership-details"> Need help ? </a></i></small></span></label>
                         <select id="membership" name="membership" required>
                             <option value="">-- Select Membership --</option>
                             <option value="np">NP - Non-Profit (Free)</option>
@@ -124,7 +124,8 @@
                     <input type="submit" value="Submit Application">
                 </form>
             </section>        
-            <section class="membership-cards">
+            <section class="membership-cards" id="membership-details container">
+                <h2>Membership Categories' Details</h2>
                 <!-- 4 cards with animation + modal triggers -->
                 <div class="card" id="np-card">
                     <h2>NP Membership</h2>

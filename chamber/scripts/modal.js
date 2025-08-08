@@ -44,7 +44,7 @@ export function showMembershipModal(type) {
   const modal = document.createElement('dialog');
   modal.classList.add('membership-modal');
 
-  const title = document.createElement('h2');
+  const title = document.createElement('h3');
   title.textContent = data.title;
   modal.appendChild(title);
 
