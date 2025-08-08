@@ -58,9 +58,16 @@ export function showMembershipModal(type) {
 
   const closeBtn = document.createElement('button');
   closeBtn.textContent = 'Close';
-  closeBtn.addEventListener('click', () => modal.close());
+  closeBtn.setAttribute('aria-label', 'Close membership details modal');
+  closeBtn.classList.add('close-modal'); // style as needed
   modal.appendChild(closeBtn);
 
+  //Close modal by clicking on the close button
+  closeBtn.addEventListener('click', () => {
+    modal.close();
+  });
+
+  //Close modal by clicking on the backgrop
   modal.addEventListener('click', e => {
     if (e.target === modal) modal.close();
   });

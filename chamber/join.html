@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +26,9 @@
 
     <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/events.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
-    <script src="scripts/join.js" defer></script>
+    <script type="module" src="scripts/modal.js"></script>
+    <script type="module" src="scripts/join.js"></script>
 
     <!-- Meta Tags for social media -->
     <!-- Facebook meta tags -->
@@ -58,108 +56,95 @@
     </nav>
     <main class="join">
         <h1>Join the Chamber</h1>
-        <section class="form-section container">
-            <h2>Chamber Member Application Form</h2>
-            <p>Please fill out this form so you can benefit from all members advantages, depending on the category you pick. </p>            
-            <small>Fields with a " * " are mandatory</small>
-            <form id="application-form" action="thankyou.html" method="get">
-            
-                <fieldset>
-                    <legend>👤 Personal Information</legend>
-            
-                    <label for="firstname">First Name*</label>
-                    <input type="text" id="firstname" name="firstname" required>
-            
-                    <label for="lastname">Last Name*</label>
-                    <input type="text" id="lastname" name="lastname" required>
-            
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-            
-                    <label for="phone">Phone*</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </fieldset>
-            
-                <fieldset>
-                    <legend>🏢 Business Details</legend>
-            
-                    <label for="business">Business Name*</label>
-                    <input type="text" id="business" name="business" required>
-            
-                    <label for="position">Your Position</label>
-                    <input type="text" id="position" name="position">
-            
-                    <label for="website">Business Website</label>
-                    <input type="url" id="website" name="website" placeholder="https://mybusiness.com">
-                </fieldset>
-            
-                <fieldset>
-                    <legend>🌟 Membership Preferences</legend>
-            
-                    <label for="membership">Membership Level</label>
-                    <select id="membership" name="membership" required>
-                        <option value="">-- Select Membership --</option>
-                        <option value="np">NP - Non-Profit (Free)</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="silver">Silver</option>
-                        <option value="gold">Gold</option>
-                    </select>
-            
-                    <label for="description">Business Description</label>
-                    <textarea id="description" name="description" rows="4"></textarea>
-                </fieldset>
-            
-                <fieldset>
-                    <legend>🗓️ Submission Details</legend>
-            
-                    <label for="timestamp">Date of Submission</label>
-                    <input type="date" id="timestamp" name="timestamp">
-                </fieldset>
-                <fieldset>
-                    <legend> Consent </legend>
-                    <label class="consent">
-                        <input type="checkbox" name="terms" required>
-                        <span>I agree to the terms and conditions</span>
-                    </label>
-                </fieldset>
-            
-                <input type="submit" value="Submit Application">
-            </form>
-
-        </section><br>
-    
-        <section class="membership-cards container">
-            <!-- 4 cards with animation + modal triggers -->
-            <div class="card" id="np-card">
-                <h2>NP Membership</h2>
-                <a href="#modal-np">More Info</a>
-            </div>
-            <div class="card" id="bronze-card">
-                <h2>Bronze Membership</h2>
-                <a href="#modal-bronze">More Info</a>
-            </div>
-            <div class="card" id="silver-card">
-                <h2>Silver Membership</h2>
-                <a href="#modal-silver">More Info</a>
-            </div>
-            <div class="card" id="gold-card">
-                <h2>Gold Membership</h2>
-                <a href="#modal-gold">More Info</a>
-            </div>
-        </section>
-    
-        <!-- Modal examples -->
-        <div id="modal-np" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h2>NP Membership Benefits</h2>
-                <p>Includes access to events, community listings, and more.</p>
-            </div>
+        <div class="container">
+            <section class="form-section">
+                <h2>Chamber Member Application Form</h2>
+                <p>Please fill out this form so you can benefit from all members advantages, depending on the category you pick. </p>            
+                <small>Fields with a " * " are mandatory</small>
+                <form id="application-form" action="thankyou.html" method="get">
+                
+                    <fieldset>
+                        <legend>👤 Personal Information</legend>
+                
+                        <label for="firstname">First Name*</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                
+                        <label for="lastname">Last Name*</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="phone">Phone*</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>🏢 Business Details</legend>
+                
+                        <label for="business">Business Name*</label>
+                        <input type="text" id="business" name="business" required>
+                
+                        <label for="position">Your Position</label>
+                        <input type="text" id="position" name="position">
+                
+                        <label for="website">Business Website</label>
+                        <input type="url" id="website" name="website" placeholder="https://mybusiness.com">
+                    </fieldset>
+                
+                    <fieldset>
+                        <legend>🌟 Membership Preferences</legend>
+                
+                        <label for="membership">Membership Level</label>
+                        <select id="membership" name="membership" required>
+                            <option value="">-- Select Membership --</option>
+                            <option value="np">NP - Non-Profit (Free)</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                
+                        <label for="description">Business Description</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                    </fieldset>
+                
+                    <fieldset hidden>
+                        <legend>🗓️ Submission Details</legend>                
+                        <label for="timestamp">Date of Submission</label>
+                        <input type="date" id="timestamp" name="timestamp">
+                    </fieldset>
+                    <fieldset>
+                        <legend> Consent </legend>
+                        <label class="consent">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the terms and conditions</span>
+                        </label>
+                    </fieldset>
+                
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>        
+            <section class="membership-cards">
+                <!-- 4 cards with animation + modal triggers -->
+                <div class="card" id="np-card">
+                    <h2>NP Membership</h2>
+                    <a href="#modal-np">More Info</a>
+                </div>
+                <div class="card" id="bronze-card">
+                    <h2>Bronze Membership</h2>
+                    <a href="#modal-bronze">More Info</a>
+                </div>
+                <div class="card" id="silver-card">
+                    <h2>Silver Membership</h2>
+                    <a href="#modal-silver">More Info</a>
+                </div>
+                <div class="card" id="gold-card">
+                    <h2>Gold Membership</h2>
+                    <a href="#modal-gold">More Info</a>
+                </div>
+            </section>
         </div>
-        <!-- Repeat for bronze, silver, gold -->
-    </main>
-    
-    
+    </main> 
     <footer>
         <div class="footer-container">
             <div class="contact-info">
@@ -246,35 +231,6 @@
             </p>
         </div>
     </footer>
-
-    <script>
-        // Insert timestamp
-        document.getElementById("timestamp").value = new Date().toISOString();
-
-        // Modal logic
-        const modals = document.querySelectorAll(".modal");
-        const closeBtns = document.querySelectorAll(".close");
-
-        closeBtns.forEach(btn => {
-            btn.onclick = () => {
-                btn.parentElement.parentElement.style.display = "none";
-            };
-        });
-
-        document.querySelectorAll(".card a").forEach(link => {
-            link.addEventListener("click", e => {
-                e.preventDefault();
-                const modalId = link.getAttribute("href");
-                document.querySelector(modalId).style.display = "block";
-            });
-        });
-
-        window.onclick = event => {
-            modals.forEach(modal => {
-                if (event.target == modal) modal.style.display = "none";
-            });
-        };
-    </script>
 </body>
 
 </html>

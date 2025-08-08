@@ -1,0 +1,62 @@
+/* Basic modal setup */
+dialog.membership-modal {
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-out forwards;
+    background-color: white;
+    z-index: 1001;
+}
+
+/* Dim background effect */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+/* Modal title */
+.membership-modal h2 {
+    margin: -2rem -2rem 0 -2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--accent-color-2);
+    color: white;
+}
+
+/* Benefit list */
+.membership-modal ul {
+    list-style-type: disc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Close button */
+.membership-modal button.close-modal {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.membership-modal button.close-modal:hover {
+    background-color: var(--accent-color-2);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

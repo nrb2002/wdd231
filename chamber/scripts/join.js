@@ -1,12 +1,11 @@
-// Timestamp insertion
-document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("timestamp").value = new Date().toISOString();
+import { showMembershipModal } from './modal.js';
+
+//When a link is clicked on a card, pull the card type and open a dialog with relevant details
+document.querySelectorAll('.card a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const cat = link.getAttribute('href').replace('#modal-', ''); //Remove the prefix to match the card cat
+    showMembershipModal(cat); 
+  });
 });
 
-// Membership Cards Modal control
-function openModal(id) {
-  document.getElementById(id).style.display = "block";
-}
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
