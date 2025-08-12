@@ -41,5 +41,35 @@
     text-align: center;
   }
   .slide{flex:0 0 70%}
+}
 
+/* Mobile-friendly stack */
+@media (max-width: 768px) {
+
+  .service-row,
+  .service-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-image img {
+    max-width: 100%;
+  }
+
+  /* On small screens stack all footer content vertically */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  footer>div {
+    flex: none;
+    width: 100%;
+  }
 }
