@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact us | FOUNTICS Garage</title>
+  <link rel="icon" type="image/x-icon" href="images/icon-fountics-gr.ico">
+
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals -
+              Baron Tshibasu -
+              This home page allows the author to demonstrate basic knowledge 
+              of HTML, CSS, and JavaScript.">
+
+  <meta name="author" content="Baron Tshibasu">
+
+  <!-- CSS links -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="preload" as="style">
+
+  <!-- Javascript files -->
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/vehicles.js" defer></script>
+  <script src="scripts/services.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+
+  <!-- Meta Tags for social media -->
+  <!-- Facebook meta tags -->
+  <meta property="og:title" content="FOUNTICS Garage">
+  <meta property="og:description" content="Professional garage for car repair and maintenance. ">
+  <meta property="og:image" content="https://nrb2002.github.io/wdd231/final-project/fountics/images/garage-large.webp">
+  <meta property="og:url" content="https://nrb2002.github.io/wdd231/final-project/fountics/">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo-fountics-gr.webp" alt="fountics Garage" width="250"></a>
+    </div>
+    <nav class="menu">
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <!-- Side Menu -->
+    <nav class="sidemenu" id="sidemenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#appointment" class="btn booking">Book an Appointment</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main class="inner-page">
+    <section class="hero-page" id="page">
+      <picture class="bg-picture">
+        <source media="(min-width: 900px)" srcset="images/fountics-gallery3-large.webp">
+        <source media="(min-width: 600px)" srcset="images/fountics-gallery3-medium.webp">
+        <img src="images/fountics-gallery1-medium.webp" alt="Hero fountics Garage" loading="lazy" aria-hidden="true" width="500"/>
+      </picture>
+      <div class="hero-text">
+        <h1>Contact Us</h1>      
+      </div>
+    </section>
+    <section class="page-content contact">
+      <h2>Leave us a message.</h2>
+      <form id="contactForm" action="confirmation.html" method="get">
+        <small>All field marked with a "*" are required.</small>
+        <fieldset>
+          <legend>Customer Info</legend>
+          <label for="name">Full Name *
+          <input type="text" placeholder="Your Name" required/>
+          </label>
+          <label for="email">Email address *
+          <input type="email" placeholder="example@domain.com" required/>
+          </label>
+          <label for="tel">Phone number (optional)
+          <input type="tel" placeholder="+243-000000000"/>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Tell us how we can help?</legend>
+          <label for="subject">Subject *
+          <input type="text" placeholder="Enter a summary sentence" required/>
+          </label>
+          <label for="message">Message *
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          </label>
+        </fieldset>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  
+  <!-- ======  FOOTER  ====== -->
+  <footer>
+    <div>
+      <p>&copy; <span id="currentyear"></span> fountics Garage. All rights reserved.</p>
+      <p>Baron Tshibasu - Kinshasa, DR Congo</p><br>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="siteplan.html">Site Plan</a></li>
+      </ul>
+
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.freepik.com/search?format=search&last_filter=selection&last_value=1&query=Garage&selection=1" target="_blank" rel="noopener noreferrer">FREEPIK</a></li>
+        <li><a href="https://unsplash.com/s/photos/car-garage" target="_blank" rel="noopener noreferrer">Unsplash</a></li>
+        <li><a href="https://www.pexels.com/search/garage/" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+      </ul>
+    </div>    
+    <p><span> Last modification: </span><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
