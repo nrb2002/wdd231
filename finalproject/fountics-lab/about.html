@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About FOUNTICS - Computer Science Research Center</title>
+    <meta name="description"
+        content="Learn about FOUNTICS, a leading Computer Science Research Center dedicated to innovation and collaboration." />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="About FOUNTICS - Computer Science Research Center" />
+    <meta property="og:description" content="Discover the mission, vision, and team behind FOUNTICS Research Center." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/about.html" />
+    <meta property="og:image"
+        content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABRFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+XG7U9AAAAQ3RSTlMAMxQjHyUhH1AaPx8bIyogICAhEysjM1ZKLDYgPj8lCzNBZVcrPDBlVTpMMDtGMzIuNkJQNEdbYxQAAABGSURBVBgZBcErEoAgDAXQikRQ0sdv//w9WzYTAEEZI1JH10jsgTpka7Xvjs2JhKa3DR95VxVg5N7jGowCF3bLhrBNN3yAhmOFvQANiGQqCJD+TXdM3TgOqxv5lB7kcxW5mjLDXC7+CMr1sgY/V2jDnB6QNxAAAAABJRU5ErkJggg==" />
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABRFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+XG7U9AAAAQ3RSTlMAMxQjHyUhH1AaPx8bIyogICAhEysjM1ZKLDYgPj8lCzNBZVcrPDBlVTpMMDtGMzIuNkJQNEdbYxQAAABGSURBVBgZBcErEoAgDAXQikRQ0sdv//w9WzYTAEEZI1JH10jsgTpka7Xvjs2JhKa3DR95VxVg5N7jGowCF3bLhrBNN3yAhmOFvQANiGQqCJD+TXdM3TgOqxv5lB7kcxW5mjLDXC7+CMr1sgY/V2jDnB6QNxAAAAABJRU5ErkJggg==" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8Y2lyY2xlIGN4PSIxMi41IiBjeT0iMTIuNSIgcj0iMTIiIGZpbGw9IiM0Qjk1RkYiLz4KICAgIDx0ZXh0IHg9IjEyLjUiIHk9IjE2IiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj5GPjwvdGV4dD4KPC9zdmc+"
+                alt="FOUNTICS Logo" />
+        </div>
+    </header>
+
+    <main>
+        <section class="about-intro">
+            <h1>About FOUNTICS</h1>
+            <p>FOUNTICS is a dedicated Computer Science Research Center committed to advancing the frontiers of
+                technology through research, innovation, and education. Our interdisciplinary teams explore topics
+                ranging from artificial intelligence and cybersecurity to data analytics and software engineering.</p>
+        </section>
+
+        <section class="team">
+            <h2>Our Team</h2>
+            <ul>
+                <li><strong>Dr. Alice Johnson</strong> — Director, AI Research</li>
+                <li><strong>Dr. Ben Martinez</strong> — Head of Cybersecurity Lab</li>
+                <li><strong>Dr. Carla Singh</strong> — Data Science Lead</li>
+                <li><strong>Dr. David Lee</strong> — Software Engineering Specialist</li>
+                <li><strong>Prof. Emma Chen</strong> — Senior Researcher & Educator</li>
+            </ul>
+        </section>
+
+        <section class="mission-vision">
+            <h2>Mission & Vision</h2>
+            <p><strong>Mission:</strong> To foster innovation and excellence in computer science research that impacts
+                society positively.</p>
+            <p><strong>Vision:</strong> To be a global leader in pioneering technologies and collaborative research
+                efforts.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FOUNTICS Research Center</p>
+    </footer>
+
+    <script>
+        // Responsive navigation toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "p001",
+    "title": "AI for Healthcare Diagnostics",
+    "field": "Artificial Intelligence",
+    "lead": "Dr. Alice Johnson",
+    "status": "Ongoing",
+    "description": "Developing machine learning models to assist in early diagnosis of diseases using medical imaging data."
+  },
+  {
+    "id": "p002",
+    "title": "Cybersecurity Threat Detection",
+    "field": "Cybersecurity",
+    "lead": "Dr. Ben Martinez",
+    "status": "Completed",
+    "description": "Designing real-time intrusion detection systems using advanced network traffic analysis."
+  },
+  {
+    "id": "p003",
+    "title": "Big Data Analytics Platform",
+    "field": "Data Science",
+    "lead": "Dr. Carla Singh",
+    "status": "Ongoing",
+    "description": "Creating scalable data pipelines and tools for processing large-scale datasets from IoT devices."
+  },
+  {
+    "id": "p004",
+    "title": "Quantum Computing Algorithms",
+    "field": "Theoretical CS",
+    "lead": "Dr. David Lee",
+    "status": "Planning",
+    "description": "Exploring novel algorithms optimized for quantum architectures to solve complex computational problems."
+  },
+  {
+    "id": "p005",
+    "title": "Secure Software Development",
+    "field": "Software Engineering",
+    "lead": "Prof. Emma Chen",
+    "status": "Ongoing",
+    "description": "Establishing best practices and automated tools for developing secure and reliable software systems."
+  },
+  {
+    "id": "p006",
+    "title": "Natural Language Processing Toolkit",
+    "field": "Artificial Intelligence",
+    "lead": "Dr. Alice Johnson",
+    "status": "Ongoing",
+    "description": "Building a comprehensive toolkit for text analysis and generation in multiple languages."
+  },
+  {
+    "id": "p007",
+    "title": "Blockchain for Supply Chains",
+    "field": "Distributed Systems",
+    "lead": "Dr. Ben Martinez",
+    "status": "Completed",
+    "description": "Implementing blockchain-based solutions to improve transparency and traceability in supply chains."
+  },
+  {
+    "id": "p008",
+    "title": "Real-time Data Visualization",
+    "field": "Data Science",
+    "lead": "Dr. Carla Singh",
+    "status": "Ongoing",
+    "description": "Developing interactive dashboards and visualization techniques for streaming data."
+  },
+  {
+    "id": "p009",
+    "title": "Robotics Control Systems",
+    "field": "Robotics",
+    "lead": "Dr. David Lee",
+    "status": "Planning",
+    "description": "Researching control algorithms for autonomous navigation and manipulation in robotics."
+  },
+  {
+    "id": "p010",
+    "title": "Privacy-preserving Data Mining",
+    "field": "Cybersecurity",
+    "lead": "Prof. Emma Chen",
+    "status": "Ongoing",
+    "description": "Developing methods for analyzing data while maintaining individual privacy and data security."
+  },
+  {
+    "id": "p011",
+    "title": "Edge Computing Architectures",
+    "field": "Distributed Systems",
+    "lead": "Dr. Alice Johnson",
+    "status": "Completed",
+    "description": "Designing architectures to process data closer to source devices for improved latency."
+  },
+  {
+    "id": "p012",
+    "title": "Machine Learning for Finance",
+    "field": "Artificial Intelligence",
+    "lead": "Dr. Ben Martinez",
+    "status": "Ongoing",
+    "description": "Applying machine learning models to forecast market trends and detect fraud."
+  },
+  {
+    "id": "p013",
+    "title": "Augmented Reality Interfaces",
+    "field": "Human-Computer Interaction",
+    "lead": "Dr. Carla Singh",
+    "status": "Planning",
+    "description": "Creating user-friendly AR interfaces for educational and industrial applications."
+  },
+  {
+    "id": "p014",
+    "title": "High-performance Computing Optimization",
+    "field": "Software Engineering",
+    "lead": "Dr. David Lee",
+    "status": "Ongoing",
+    "description": "Optimizing algorithms and code for parallel processing on HPC clusters."
+  },
+  {
+    "id": "p015",
+    "title": "AI Ethics and Policy Research",
+    "field": "Ethics & Policy",
+    "lead": "Prof. Emma Chen",
+    "status": "Ongoing",
+    "description": "Investigating ethical considerations and policy frameworks surrounding AI technologies."
+  }
+]

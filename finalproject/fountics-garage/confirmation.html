@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation Page | FOUNTICS Garage</title>
+    <link rel="icon" type="image/x-icon" href="images/icon-fountics-gr.ico">
+
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals - Baron Tshibasu - Demonstration of HTML, CSS, and JavaScript skills for FOUNTICS Garage, specialists in Asian vehicle maintenance.">
+    <meta name="author" content="Baron Tshibasu">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script type="module" src="scripts/services.js"></script>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="FOUNTICS Garage">
+    <meta property="og:description" content="Professional garage for car repair and maintenance.">
+    <meta property="og:image"
+        content="https://nrb2002.github.io/wdd231/final-project/fountics/images/garage-large.webp">
+    <meta property="og:url" content="https://nrb2002.github.io/wdd231/final-project/fountics/">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo-fountics-gr.webp" alt="FOUNTICS Garage Logo" width="250"></a>
+        </div>
+        <nav class="menu">
+            <ul class="menu-links">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html" class="btn booking">Request a Service</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger" role="button" aria-label="Open menu" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Side Menu -->
+        <nav class="sidemenu" id="sidemenu">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="services.html" class="btn booking">Request a Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-list" aria-label="List of garage services">
+            <h1>Booking Confirmation</h1>
+            <div id="booking-confirmation" role="alert" aria-live="polite" hidden></div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>&copy; <span id="currentyear"></span> FOUNTICS Garage. All rights reserved.</p>
+                <p>Baron Tshibasu - Kinshasa, DR Congo</p>
+            </div>
+            <div>
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="siteplan.html">Site Plan</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ATTRIBUTIONS</h4>
+                <ul>
+                    <li><a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">FREEPIK</a></li>
+                    <li><a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Unsplash</a>
+                    </li>
+                    <li><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels</a></li>
+                </ul>
+            </div>
+        </div>
+        <p><span>Last modification: </span><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

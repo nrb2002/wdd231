@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact FOUNTICS - Computer Science Research Center</title>
+    <meta name="description"
+        content="Contact the FOUNTICS Computer Science Research Center for inquiries and collaborations." />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Contact FOUNTICS - Computer Science Research Center" />
+    <meta property="og:description"
+        content="Reach out to FOUNTICS Research Center with your questions or collaboration proposals." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/contact.html" />
+    <meta property="og:image"
+        content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABRFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+XG7U9AAAAQ3RSTlMAMxQjHyUhH1AaPx8bIyogICAhEysjM1ZKLDYgPj8lCzNBZVcrPDBlVTpMMDtGMzIuNkJQNEdbYxQAAABGSURBVBgZBcErEoAgDAXQikRQ0sdv//w9WzYTAEEZI1JH10jsgTpka7Xvjs2JhKa3DR95VxVg5N7jGowCF3bLhrBNN3yAhmOFvQANiGQqCJD+TXdM3TgOqxv5lB7kcxW5mjLDXC7+CMr1sgY/V2jDnB6QNxAAAAABJRU5ErkJggg==" />
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABRFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+XG7U9AAAAQ3RSTlMAMxQjHyUhH1AaPx8bIyogICAhEysjM1ZKLDYgPj8lCzNBZVcrPDBlVTpMMDtGMzIuNkJQNEdbYxQAAABGSURBVBgZBcErEoAgDAXQikRQ0sdv//w9WzYTAEEZI1JH10jsgTpka7Xvjs2JhKa3DR95VxVg5N7jGowCF3bLhrBNN3yAhmOFvQANiGQqCJD+TXdM3TgOqxv5lB7kcxW5mjLDXC7+CMr1sgY/V2jDnB6QNxAAAAABJRU5ErkJggg==" />
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjUiIGhlaWdodD0iMjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8Y2lyY2xlIGN4PSIxMi41IiBjeT0iMTIuNSIgcj0iMTIiIGZpbGw9IiM0Qjk1RkYiLz4KICAgIDx0ZXh0IHg9IjEyLjUiIHk9IjE2IiBmb250LXNpemU9IjExIiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj5GPjwvdGV4dD4KPC9zdmc+"
+                alt="FOUNTICS Logo" />
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-form-section">
+            <h1>Contact FOUNTICS</h1>
+            <p>Please fill out the form below to send us a message. We welcome inquiries about our research,
+                collaborations, or other questions.</p>
+            <form action="form-action.html" method="POST" id="contact-form" novalidate>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="2" />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="4" />
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FOUNTICS Research Center</p>
+    </footer>
+
+    <script>
+        // Responsive navigation toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+
+</html>

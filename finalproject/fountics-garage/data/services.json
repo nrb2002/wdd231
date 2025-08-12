@@ -1,0 +1,107 @@
+[
+  {
+    "id": "svc001",
+    "name": "Performance Tuning",
+    "description": "Boost your car's power and responsiveness with expert tuning.",
+    "price": "$150",
+    "duration": "2 hours"
+  },
+  {
+    "id": "svc002",
+    "name": "Routine Maintenance",
+    "description": "Oil changes, filter replacements, and scheduled checks.",
+    "price": "$75",
+    "duration": "1 hour"
+  },
+  {
+    "id": "svc003",
+    "name": "Engine Diagnostics",
+    "description": "Advanced diagnostics to detect engine issues quickly.",
+    "price": "$90",
+    "duration": "1.5 hours"
+  },
+  {
+    "id": "svc004",
+    "name": "Professional Car Wash",
+    "description": "Complete interior and exterior cleaning services.",
+    "price": "$50",
+    "duration": "45 minutes"
+  },
+  {
+    "id": "svc005",
+    "name": "Brake Inspection",
+    "description": "Safety inspection and brake pad replacement.",
+    "price": "$80",
+    "duration": "1 hour"
+  },
+  {
+    "id": "svc006",
+    "name": "Battery Replacement",
+    "description": "Test and replace your car battery.",
+    "price": "$120",
+    "duration": "30 minutes"
+  },
+  {
+    "id": "svc007",
+    "name": "Wheel Alignment",
+    "description": "Improve driving performance and tire life.",
+    "price": "$70",
+    "duration": "1 hour"
+  },
+  {
+    "id": "svc008",
+    "name": "AC Repair",
+    "description": "Keep your car cool with AC diagnostics and repair.",
+    "price": "$100",
+    "duration": "2 hours"
+  },
+  {
+    "id": "svc009",
+    "name": "Transmission Service",
+    "description": "Transmission fluid change and system check.",
+    "price": "$200",
+    "duration": "3 hours"
+  },
+  {
+    "id": "svc010",
+    "name": "Suspension Check",
+    "description": "Inspect and repair shocks and struts.",
+    "price": "$120",
+    "duration": "1.5 hours"
+  },
+  {
+    "id": "svc011",
+    "name": "Exhaust Repair",
+    "description": "Fix leaks and improve emission efficiency.",
+    "price": "$150",
+    "duration": "2 hours"
+  },
+  {
+    "id": "svc012",
+    "name": "Headlight Replacement",
+    "description": "Replace and align your vehicle’s headlights.",
+    "price": "$60",
+    "duration": "45 minutes"
+  },
+  {
+    "id": "svc013",
+    "name": "Tire Rotation",
+    "description": "Extend tire life with regular rotations.",
+    "price": "$40",
+    "duration": "30 minutes"
+  },
+  {
+    "id": "svc014",
+    "name": "Fluid Check & Top-Up",
+    "description": "Check and refill essential car fluids.",
+    "price": "$30",
+    "duration": "15 minutes"
+  },
+  {
+    "id": "svc015",
+    "name": "Battery Charging",
+    "description": "Fast battery charging and testing service.",
+    "price": "$50",
+    "duration": "45 minutes"
+  }
+]
